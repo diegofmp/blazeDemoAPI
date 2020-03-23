@@ -2,3 +2,12 @@ logging:
   level: INFO
   loggers:
     blazeDemo: DEBUG
+
+mongoDBConnection:
+  credentials:
+    username: "admin" 
+    password: "secret1234"
+  seeds:
+    - host: "localhost"
+      port: 27017
+  database: "blaze-demo"
