@@ -33,7 +33,8 @@ public class CustomerResource {
         this.customerDAO = customerDAO;
     }
     
-    /*@GET
+    @GET
+    @Path("allCustomers")
     public Response all() {
         final List<Customer> customersList = customerDAO.getAll();
         if (customersList.isEmpty()) {
@@ -42,7 +43,7 @@ public class CustomerResource {
                     .build();
         }
         return Response.ok(customersList).build();
-    }*/
+    }
     
     @GET
     public Response query(
